@@ -19,7 +19,7 @@ $(function(){
   /* Create presentation */
   presentation = $( "#presentation" ).presentation( {firstSlide: nslide} );
   
-  // When key is pressed…
+  /* When key is pressed… */
   $(document).keydown(function(e){
     // If it is right arrow key, move to next slide
     if (e.keyCode == 39) {   
@@ -43,5 +43,17 @@ $(function(){
       return false;
     }
   });  
+  
+  /* Links to slides */
+  $( 'a[href^="#slide="]' ).click( function( ){
+    //var hash_regexp = new RegExp("^#slide=([0-9]+)$");
+    // Get current slide number from query string
+    var nslide = $(this).attr('href').replace( hash_regexp, "$1" );
+    if( !isNaN(nslide) )
+      presentation.moveToSlide( nslide );                          
+      
+            
+    return false;
+  });
   
 });  

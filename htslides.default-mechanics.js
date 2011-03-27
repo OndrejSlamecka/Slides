@@ -49,8 +49,10 @@ $(function(){
     //var hash_regexp = new RegExp("^#slide=([0-9]+)$");
     // Get current slide number from query string
     var nslide = $(this).attr('href').replace( hash_regexp, "$1" );
-    if( !isNaN(nslide) )
-      presentation.moveToSlide( nslide );                          
+    if( !isNaN(nslide) ){
+      presentation.moveToSlide( nslide );
+      location.hash = "#slide="+nslide;
+    }                          
       
             
     return false;

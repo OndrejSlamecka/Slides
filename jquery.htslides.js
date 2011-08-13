@@ -31,7 +31,8 @@ var Presentation = function( presentation, options ){
   this.getNextSlide = function()
   {         
     if( this.currentSlideNumber == null )
-      this.currentSlideNumber = 0; // we will add 1   
+      return 1;
+      
     if( this.currentSlideNumber == this.totalSlides )
       return this.currentSlideNumber;
             
@@ -41,12 +42,10 @@ var Presentation = function( presentation, options ){
   // Returns prev slide's number
   this.getPrevSlide = function()
   {         
-    if( this.currentSlideNumber == null )
-      this.currentSlideNumber = 2; // we will substract 1  
-    if( this.currentSlideNumber == 1 )
-      return 1; 
-
-    return this.currentSlideNumber -1;       
+    if( this.currentSlideNumber == null || this.currentSlideNumber == 1 )
+      return 1;
+    else
+      return this.currentSlideNumber -1;       
   }
     
   /*-- PRESENTATION METHODS --*/

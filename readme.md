@@ -1,0 +1,1 @@
+Basic information can be found [in Slides' own presentation](http://slides.slamecka.cz/).

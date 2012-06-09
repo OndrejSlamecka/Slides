@@ -1,0 +1,169 @@
+/* Reset by Mr. Meyer - http://meyerweb.com/eric/tools/css/reset/index.html - v2.0 | 20110126 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}/* HTML5 display-role reset for older browsers */article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/**
+ * Author: Ondrej Slamecka, www.slamecka.cz
+ */
+
+/* --- LAYOUT --- */
+
+body{
+	background: url(../bg.png) #E6E6E6;
+	color: #222;
+	font-family: sans-serif;
+	font-size: 20px;
+	line-height: 1.8;
+	overflow: hidden;
+}
+
+.slide{
+	float: left;
+	width: 100%;
+}
+
+	article{
+		margin: 0 auto;
+		width: 940px;
+		height: 720px;
+
+		background: #fff;
+		box-shadow: 0 0 3px #666, inset 0 0 10px 0 #E0E0E0;
+		border-radius: 3px;
+		padding: 25px 40px 40px;
+		margin: 0 auto;
+	}
+
+/* --- CONTENT --- */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Grid */
+
+/*! Bootstrap v2.0.2 
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0 
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+.row { margin-left: -20px; *zoom: 1; }
+.row:before,
+.row:after { display: table; content: ""; }
+.row:after { clear: both; }
+
+[class*="span"] { float: left; margin-left: 20px; }
+
+.span12 { width: 940px; }
+.span11 { width: 860px; }
+.span10 { width: 780px; }
+.span9 { width: 700px; }
+.span8 { width: 620px; }
+.span7 { width: 540px; }
+.span6 { width: 460px; }
+.span5 { width: 380px; }
+.span4 { width: 300px; }
+.span3 { width: 220px; }
+.span2 { width: 140px; }
+.span1 { width: 60px; }
+
+.offset12 { margin-left: 980px; }
+.offset11 { margin-left: 900px; }
+.offset10 { margin-left: 820px; }
+.offset9 { margin-left: 740px; }
+.offset8 { margin-left: 660px; }
+.offset7 { margin-left: 580px; }
+.offset6 { margin-left: 500px; }
+.offset5 { margin-left: 420px; }
+.offset4 { margin-left: 340px; }
+.offset3 { margin-left: 260px; }
+.offset2 { margin-left: 180px; }
+.offset1 { margin-left: 100px; }
+
+/* Headings */
+h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.6em;
+	margin: .3em 0 .6em;
+}
+
+/* Block */
+p {
+	padding-bottom: 1em;
+}
+
+ul {
+	list-style: disc inside;
+	margin: .5em 1em;
+}
+
+table {
+	border: 1px solid #333;
+}
+
+th {
+	background: gray;
+	font-weight: bold;
+	padding: 0 .4em;
+
+	/* Enable coolness */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(100%,rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(-45deg, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );	
+}
+
+td {
+	border: 1px solid #666;	
+	padding: .2em .4em;
+}
+
+.even td {
+	background: #F5F5F5;
+}
+
+/* Inline */
+strong, b {
+	font-weight: bold;
+}
+
+em, i {
+	font-style: italic;
+}
+
+small {
+	font-size: 90%;
+	color: #333;
+}
+
+code {
+	background: #EEE;
+	padding: 0 .2em;
+	border: 1px solid #BBB;
+	border-radius: 2px;
+}
+
+/* --- SPECIFIC --- */
+
+.controls-info {
+	margin: 1em 0;
+	color: #777;
+	text-shadow: 1px 1px #FFF;
+	text-align: center;
+	font: 13px/1.3 Tahoma, "Lucida Grande CE", lucida, sans-serif;
+}
+
+.author {
+    color: #666666;
+    font-style: oblique;
+    text-align: center;
+}
